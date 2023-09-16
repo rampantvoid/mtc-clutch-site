@@ -1,0 +1,176 @@
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+.home-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/Cover.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+}
+
+.content-wrapper {
+  width: 100%;
+  margin: 0 295px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-title p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 68px;
+}
+
+.main-title {
+  font-size: 80px !important;
+  line-height: 100px;
+}
+
+.cap-letter {
+  font-weight: 800;
+  font-size: 150px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  width: 40%;
+  height: 70px;
+  border-radius: 40px;
+  border: 1px solid rgb(170, 170, 170);
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+.see-button {
+  width: 40%;
+  height: 70px;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+
+.see-button span {
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+
+.see-button:hover span {
+  transform: translateX(8px);
+}
+
+.see-button:hover {
+  background-color: #006fee;
+  color: white;
+}
+.arrow-right {
+  font-size: 23px;
+}
+.register-button span {
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+.register-button:hover span {
+  transform: translateX(8px);
+}
+.register-button:hover {
+  box-shadow: none;
+  cursor: pointer;
+  background-color: #006fee;
+  border: none;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section img {
+  width: 300px;
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo-section {
+  position: relative;
+}
+
+.main-logo {
+  z-index: 1;
+}
+
+.tech-icons {
+  position: relative;
+  top: 50%;
+  left: -65%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.tech-icons img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.226);
+  border-radius: 10%;
+  box-shadow: 0 0px 20px rgb(0, 111, 238, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.icon-hover:hover {
+  cursor: pointer;
+  background-color: blue;
+}

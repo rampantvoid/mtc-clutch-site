@@ -1,0 +1,110 @@
+.navbar {
+  position: fixed;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  z-index: 9999999;
+}
+
+.content-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  margin: 0 295px;
+  justify-content: space-between;
+}
+
+.logo-wrapper img {
+  width: 64px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 17px;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+}
+
+.login-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: white;
+  background-color: #006fee;
+  gap: 5px;
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button img {
+  transition: all 0.3s ease-in-out;
+  width: 20px;
+}
+
+.login-button:hover img {
+  transform: translateX(10px);
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.login-button:hover {
+  width: 140px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+a:hover {
+  text-align: center;
+}
+.active {
+  color: white;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Start the border from the left */
+  width: 0; /* Initially, the border has no width */
+  height: 3px; /* Adjust the thickness of the border as needed */
+  background-color: #006fee; /* Color of the border */
+  transition: width 0.3s ease-in-out; /* Transition the width property */
+}
+
+a:hover::before {
+  width: 100%; /* Expand the border to the right */
+}
+
+a.active::before {
+  width: 100%;
+}
