@@ -19,13 +19,19 @@
 }
 
 .galleryHeading {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .galleryHeading h1 {
   font-size: 52px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.galleryHeading h2 {
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 100px;
 }
 
 .image-container {
@@ -84,4 +90,19 @@
 
 .gallery-image:hover {
   transform: scale(1.3);
+}
+
+@media screen and (max-width: 786px) {
+  .gallery-wrapper {
+    margin: 0 30px;
+  }
+
+  .galleryHeading h2 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
 }

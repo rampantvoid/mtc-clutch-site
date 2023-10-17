@@ -1,19 +1,43 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   const location = useLocation();
+  const [isSmall, setScreen] = useState(false);
+  const [toggle, setToggle] = useState(false);
+
+  const logoClick = () => {
+    if (isSmall) {
+      const links = document.querySelector(".nav-links");
+      console.log(toggle);
+      if (toggle) {
+        links.classList.remove("hidden");
+        setToggle(!toggle);
+      } else {
+        links.classList.add("hidden");
+        setToggle(true);
+        console.log(toggle);
+      }
+    }
+  };
+
+  useEffect(() => {
+    const { innerWidth } = window;
+    console.log(innerWidth);
+    if (innerWidth <= 768) {
+      setScreen(true);
+    }
+  }, []);
+
   return (
     <>
       <div className="navbar">
         <div className="content-container">
-          <div className="logo-wrapper">
+          <div className="logo-wrapper" onClick={() => logoClick()}>
             <img src={require("./assets/Mtc.png")} alt="" />
           </div>
           <div className="nav-links">
-            <p></p>
-            <p></p>
             <Link
               to="/"
               className={`nav-link ${

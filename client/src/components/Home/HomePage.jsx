@@ -36,6 +36,19 @@ function HomePage() {
     <>
       <div className="home-container">
         <div className="content-wrapper">
+          <div className="home-title-sm">
+            <p>Microsoft</p>
+            <p>Technical</p>
+            <p>Community</p>
+            <div className="hero-buttons">
+              <button className="register-button">
+                register <span className="arrow-right">&#x2192;</span>
+              </button>
+              <button className="see-button">
+                see more <span className="arrow-right">&#x2192;</span>
+              </button>
+            </div>
+          </div>
           <div className="home-title">
             <p className="main-title">
               <span className="cap-letter">M</span>icrosoft

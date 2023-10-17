@@ -130,3 +130,26 @@
 .read-more:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+  .abt-content-wrapper {
+    margin-bottom: 300px;
+  }
+  .abt-img-glass {
+    width: 200px;
+  }
+  .empty-div {
+    display: none;
+  }
+  .abt-img-glass img {
+    width: 200px;
+  }
+
+  .abt-content-wrapper {
+    width: 100%;
+  }
+}
