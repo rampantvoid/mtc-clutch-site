@@ -9,6 +9,7 @@ import Gallery from "./components/Gallery/Gallery";
 import { useEffect } from "react";
 import AOS from "aos";
 import Team from "./components/Team/Team";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -51,6 +52,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
