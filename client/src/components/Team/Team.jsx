@@ -15,11 +15,11 @@ function Team() {
             <h2>Faculty Coordinators</h2>
             <div className="img-contianer">
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/keshav.jpeg" alt="" />
                 <p>Keshav Sinha</p>
               </div>
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/ajay.jpeg" alt="" />
                 <p>Ajay Kumar</p>
               </div>
             </div>
@@ -35,15 +35,15 @@ function Team() {
             <h2>Student Coordinators</h2>
             <div className="img-contianer">
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/Rashi.jpg" alt="" />
                 <p>Rashi Trikha</p>
               </div>
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/Kartikeya.jpg" alt="" />
                 <p>Kartikey Khanna</p>
               </div>
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/Vishal1.webp" alt="" />
                 <p>Vishal Gupta</p>
               </div>
             </div>
@@ -51,19 +51,19 @@ function Team() {
             <h2>Technical Team</h2>
             <div className="img-contianer">
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/Rajat.jpeg" alt="" />
                 <p>Rajat Bisht</p>
                 <p>HEAD</p>
               </div>
             </div>
             <div className="img-contianer">
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/rohinnn.jpeg" alt="" />
                 <p>Rohin Meharotra</p>
                 <p>ASSOCIATE HEAD</p>
               </div>
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/vanshhh.jpeg" alt="" />
                 <p>Vansh Chauhan</p>
                 <p>ASSOCIATE HEAD</p>
               </div>
