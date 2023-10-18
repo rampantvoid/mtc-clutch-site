@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,15 @@ function App() {
             element={
               <>
                 <Team />
+              </>
+            }
+          />
+          <Route
+            path="/contact"
+            exact
+            element={
+              <>
+                <Contact />
               </>
             }
           />
