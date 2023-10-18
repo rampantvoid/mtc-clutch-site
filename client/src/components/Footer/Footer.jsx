@@ -7,7 +7,7 @@ function Footer() {
       <footer className="footer">
         <div className="footer-wrapper">
           <div className="footer-logo">
-            <img src="/MTC.png" alt="" />
+            <img src="/Mtc.png" alt="" />
             <div className="mtc-title">
               <p className="mtc">microsoft </p>{" "}
               <p className="mtc-2"> technical community</p>
