@@ -27,7 +27,7 @@ function Team() {
             <h2>President</h2>
             <div className="img-contianer">
               <div>
-                <img src="/logo192.png" alt="" />
+                <img src="/team_img/Aditya.jpeg" alt="" />
                 <p>Aditya Kumar</p>
               </div>
             </div>
@@ -48,7 +48,7 @@ function Team() {
               </div>
             </div>
 
-            <h2>Technical Team</h2>
+            {/* <h2>Technical Team</h2>
             <div className="img-contianer">
               <div>
                 <img src="/team_img/Rajat.jpeg" alt="" />
@@ -109,7 +109,7 @@ function Team() {
                 <p>Vansh Chauhan</p>
                 <p>ASSOCIATE HEAD</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
