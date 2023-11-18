@@ -42,17 +42,9 @@
   height: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  /* gap: 18px; */
 
-  display: flex;
-}
-
-.image-wrapper {
-  /* padding: 20px; */
-  /* max-width: 40%; */
-  position: relative;
-  width: 30%;
-  overflow: hidden;
+  /* display: flex; */
 }
 
 .overlay {

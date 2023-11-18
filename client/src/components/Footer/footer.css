@@ -4,6 +4,7 @@
   height: 300px;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
 }
 
@@ -12,6 +13,8 @@
   height: 200px;
   margin: 0 295px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 100px;
 }
 
@@ -123,6 +126,7 @@
     border-top: 1px solid white;
     flex-direction: column;
     height: 100%;
+    border-bottom: 20px solid white;
   }
   .footer-wrapper {
     flex-direction: column;
@@ -157,7 +161,6 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    border-bottom: 20px solid white;
     /* border-left: 10px solid white; */
   }
   .socials p {
