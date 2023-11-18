@@ -1,5 +1,4 @@
 .footer {
-  scroll-snap-align: start;
   background: #000;
   width: 100%;
   height: 300px;
@@ -121,6 +120,51 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    display: none;
+    border-top: 1px solid white;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+  }
+  .footer-logo img {
+    width: 50px;
+  }
+  .footer-logo {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-left: 5px solid white; */
+    border-bottom: 1px solid white;
+  }
+  .reachus {
+    text-align: center;
+  }
+  .reach-us {
+    border: 0;
+    /* border-right: 8px solid white; */
+    border-bottom: 1px solid white;
+    padding: 50px;
+  }
+  .socials {
+    border: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 20px solid white;
+    /* border-left: 10px solid white; */
+  }
+  .socials p {
+    margin: 0;
+  }
+  .icons {
+    margin: 0;
+    gap: 70px;
   }
 }

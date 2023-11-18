@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -12,7 +12,9 @@
 
   z-index: 9999999;
 }
-
+.ham-icon {
+  display: none !important;
+}
 .content-container {
   width: 100%;
   padding: 10px;
@@ -110,11 +112,15 @@ a.active::before {
 }
 
 @media screen and (max-width: 768px) {
+  .logo-wrapper img {
+    width: 50px;
+  }
   .nav-links {
     display: none;
     margin-top: 30px;
     flex-direction: column;
     align-items: baseline;
+    width: 100%;
   }
   .hidden {
     display: flex !important;
@@ -122,11 +128,9 @@ a.active::before {
     flex-direction: column !important;
     align-items: baseline;
     display: flex;
-
     gap: 30px;
     font-size: 17px;
   }
-
   .nav-link {
     border-bottom: 1px solid white;
     width: 100%;
@@ -137,6 +141,6 @@ a.active::before {
   }
   .content-container {
     margin: 0 20px;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }

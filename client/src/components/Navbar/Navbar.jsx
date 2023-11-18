@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Hamburger from "hamburger-react";
 import "./Navbar.css";
 
 function Navbar() {
@@ -7,7 +8,7 @@ function Navbar() {
   const [isSmall, setScreen] = useState(false);
   const [toggle, setToggle] = useState(false);
 
-  const logoClick = () => {
+  const dropDown = () => {
     if (isSmall) {
       const links = document.querySelector(".nav-links");
       console.log(toggle);
@@ -23,6 +24,21 @@ function Navbar() {
   };
 
   useEffect(() => {
+    if (isSmall) {
+      const links = document.querySelector(".nav-links");
+      console.log(toggle);
+      if (toggle) {
+        links.classList.remove("hidden");
+        setToggle(!toggle);
+      } else {
+        links.classList.add("hidden");
+        setToggle(true);
+        console.log(toggle);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     const { innerWidth } = window;
     console.log(innerWidth);
     if (innerWidth <= 768) {
@@ -34,9 +50,17 @@ function Navbar() {
     <>
       <div className="navbar">
         <div className="content-container">
-          <div className="logo-wrapper" onClick={() => logoClick()}>
+          <div className="logo-wrapper">
             <img src={require("./assets/Mtc.png")} alt="" />
           </div>
+          {isSmall && (
+            <Hamburger
+              toggled={toggle}
+              toggle={setToggle}
+              onToggle={dropDown}
+            />
+          )}
+
           <div className="nav-links">
             <Link
               to="/"

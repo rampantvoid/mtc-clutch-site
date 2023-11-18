@@ -9,7 +9,3 @@
 ::-webkit-scrollbar-thumb {
   background: #006fee;
 }
-
-:root {
-  scroll-snap-type: y mandatory;
-}

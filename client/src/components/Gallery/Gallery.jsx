@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Gallery.css";
+import imageCompression from "browser-image-compression";
 
 function Gallery() {
   const pictures = [
@@ -30,6 +31,35 @@ function Gallery() {
     "8955ae93-8788-4440-ac57-b924f5e2b149-18g.JPG",
   ];
 
+  const compressedImages = [];
+
+  const compressImages = async (imgUrl) => {
+    const compressedImage = await fetch(
+      "https://images.abstractapi.com/v1/url/",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          api_key: "93b6446be6af4ddc8cc3e14fc8b0855d",
+          url: imgUrl,
+          lossy: true,
+        }),
+      }
+    );
+
+    // console.log(compressedImage);
+    compressedImages.push(compressedImage);
+  };
+
+  useEffect(() => {
+    pictures.map((picture) => {
+      // console.log(picture);
+      compressImages(`https://utfs.io/f/${picture}`);
+    });
+  }, []);
   return (
     <>
       <div className="gallery-container">
@@ -44,7 +74,8 @@ function Gallery() {
                 <div className="image-wrapper" data-aos="fade-up">
                   <img
                     className="gallery-image"
-                    src={`https://utfs.io/f/${picture}`}
+                    // src={`https://utfs.io/f/${picture}`}
+                    // src={compressImages(`https://utfs.io/f/${picture}`)}
                     loading="lazy"
                   />
                 </div>
