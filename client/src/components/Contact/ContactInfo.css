@@ -1,6 +1,9 @@
+.constact-main-container {
+  /* width: 50%; */
+}
 .contact-info {
-  flex-grow: 1;
-  width: 100%;
+  /* flex-grow: 1; */
+  width: 50%;
   margin-top: 30px;
   display: flex;
 }
@@ -12,6 +15,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -43,8 +47,8 @@
 }
 
 .contact-heading {
-  align-self: flex-start;
-  width: 100%;
+  /* align-self: flex-start; */
+  width: 50%;
   text-transform: uppercase;
 }
 
@@ -72,6 +76,7 @@
   .contact-info {
     flex-wrap: wrap;
     gap: 50px;
+    width: 100%;
   }
 
   .contact-heading div {

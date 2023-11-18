@@ -2,6 +2,8 @@
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 5.625em;
+  margin-bottom: 0;
+  margin-top: 100px;
 }
 
 .heading-container {
@@ -21,6 +23,8 @@
 .form-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -47,6 +51,10 @@ label {
   font-size: 20px;
 }
 form {
+  width: 50%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 .form-input {
   padding: 17px 25px;
@@ -74,7 +82,7 @@ textarea {
 }
 
 .btn {
-  width: 8rem;
+  width: 10rem;
   align-self: flex-end;
   padding: 12px 10px;
   border-radius: 30px;
@@ -127,5 +135,9 @@ textarea {
   .btn {
     width: 50%;
     margin-bottom: 30px;
+    align-self: self-start;
+  }
+  form {
+    width: 100%;
   }
 }
