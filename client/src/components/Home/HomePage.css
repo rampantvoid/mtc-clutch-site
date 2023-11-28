@@ -178,6 +178,7 @@
 
   .content-wrapper {
     margin: 10px;
+    justify-content: center;
   }
 
   .home-title {
