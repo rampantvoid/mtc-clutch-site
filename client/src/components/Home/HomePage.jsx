@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function HomePage() {
+  const navigate = useNavigate();
   const techIcons = [
     { name: "github", radius: 250 },
     { name: "nodejs", radius: 200 },
@@ -61,7 +63,13 @@ function HomePage() {
               <button className="register-button">
                 register <span className="arrow-right">&#x2192;</span>
               </button>
-              <button className="see-button">
+
+              <button
+                className="see-button"
+                onClick={() => {
+                  navigate("/team");
+                }}
+              >
                 see more <span className="arrow-right">&#x2192;</span>
               </button>
             </div>

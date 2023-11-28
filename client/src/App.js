@@ -11,6 +11,7 @@ import AOS from "aos";
 import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
+import EventDetails from "./components/EventDetails/EventDetails";
 
 function App() {
   useEffect(() => {
@@ -61,6 +62,7 @@ function App() {
               </>
             }
           />
+          <Route path="/event/:id" exact Component={EventDetails} />
         </Routes>
         <Footer />
       </Router>

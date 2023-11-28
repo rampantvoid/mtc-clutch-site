@@ -77,7 +77,7 @@
   width: 140px;
 }
 
-a {
+.nav-links a {
   text-decoration: none;
   color: white;
   font-weight: 300;
@@ -85,14 +85,14 @@ a {
   position: relative;
 }
 
-a:hover {
+.nav-links a:hover {
   text-align: center;
 }
 .active {
   color: white;
 }
 
-a::before {
+.nav-links a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -103,11 +103,11 @@ a::before {
   transition: width 0.3s ease-in-out; /* Transition the width property */
 }
 
-a:hover::before {
+.nav-links a:hover::before {
   width: 100%; /* Expand the border to the right */
 }
 
-a.active::before {
+.nav-links a.active::before {
   width: 100%;
 }
 

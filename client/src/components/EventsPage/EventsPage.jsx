@@ -20,7 +20,7 @@ function EventsPage() {
           <div className="past-events">
             <EventCarousel />
           </div>
-          <button className="see-more">see more</button>
+          {/* <button className="see-more">see more</button> */}
         </div>
       </div>
     </>

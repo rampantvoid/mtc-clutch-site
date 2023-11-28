@@ -1,5 +1,37 @@
 import React from "react";
 import "./Team.css";
+import TeamCard from "../TeamCard/TeamCard";
+
+const facultyCoordinators = [
+  {
+    name: "Ajay Kumar",
+    image: "/team_img/Ajay.jpeg",
+    linkedinID: "htttps://www.google.com",
+  },
+  {
+    name: "Keshav Sinha",
+    image: "/team_img/keshav.jpeg",
+    linkedinID: "htttps://www.google.com",
+  },
+];
+
+const studenCoordinators = [
+  {
+    name: "Rashi Trikha",
+    image: "/team_img/Rashi.jpg",
+    linkedinID: "htttps://www.google.com",
+  },
+  {
+    name: "Kartikey Khanna",
+    image: "/team_img/Kartikeya.jpg",
+    linkedinID: "htttps://www.google.com",
+  },
+  {
+    name: "Vishal Gupta",
+    image: "/team_img/Vishal1.webp",
+    linkedinID: "htttps://www.google.com",
+  },
+];
 
 function Team() {
   return (
@@ -13,103 +45,38 @@ function Team() {
 
           <div className="card-container">
             <h2>Faculty Coordinators</h2>
-            <div className="img-contianer">
-              <div>
-                <img src="/team_img/keshav.jpeg" alt="" />
-                <p>Keshav Sinha</p>
-              </div>
-              <div>
-                <img src="/team_img/ajay.jpeg" alt="" />
-                <p>Ajay Kumar</p>
-              </div>
+
+            <div className="wrapper-div">
+              {facultyCoordinators.map((faculty) => (
+                <TeamCard
+                  name={faculty.name}
+                  image={faculty.image}
+                  linkedinID={faculty.linkedinID}
+                />
+              ))}
             </div>
 
             <h2>President</h2>
-            <div className="img-contianer">
-              <div>
-                <img src="/team_img/Aditya.jpeg" alt="" />
-                <p>Aditya Kumar</p>
-              </div>
+
+            <div className="wrapper-div">
+              <TeamCard
+                name="Aditya Kumar"
+                image="/team_img/Aditya.jpeg"
+                linkedinID="google"
+              />
             </div>
 
             <h2>Student Coordinators</h2>
-            <div className="img-contianer">
-              <div>
-                <img src="/team_img/Rashi.jpg" alt="" />
-                <p>Rashi Trikha</p>
-              </div>
-              <div>
-                <img src="/team_img/Kartikeya.jpg" alt="" />
-                <p>Kartikey Khanna</p>
-              </div>
-              <div>
-                <img src="/team_img/Vishal1.webp" alt="" />
-                <p>Vishal Gupta</p>
-              </div>
-            </div>
 
-            {/* <h2>Technical Team</h2>
-            <div className="img-contianer">
-              <div>
-                <img src="/team_img/Rajat.jpeg" alt="" />
-                <p>Rajat Bisht</p>
-                <p>HEAD</p>
-              </div>
+            <div className="wrapper-div">
+              {studenCoordinators.map((student) => (
+                <TeamCard
+                  name={student.name}
+                  image={student.image}
+                  linkedinID={student.linkedinID}
+                />
+              ))}
             </div>
-            <div className="img-contianer">
-              <div>
-                <img src="/team_img/rohinnn.jpeg" alt="" />
-                <p>Rohin Meharotra</p>
-                <p>ASSOCIATE HEAD</p>
-              </div>
-              <div>
-                <img src="/team_img/vanshhh.jpeg" alt="" />
-                <p>Vansh Chauhan</p>
-                <p>ASSOCIATE HEAD</p>
-              </div>
-            </div>
-
-            <h2>Management & RECORDS Team</h2>
-            <div className="img-contianer">
-              <div>
-                <img src="/logo192.png" alt="" />
-                <p>Rajat Bisht</p>
-                <p>HEAD</p>
-              </div>
-            </div>
-            <div className="img-contianer">
-              <div>
-                <img src="/logo192.png" alt="" />
-                <p>Rohin Meharotra</p>
-                <p>ASSOCIATE HEAD</p>
-              </div>
-              <div>
-                <img src="/logo192.png" alt="" />
-                <p>Vansh Chauhan</p>
-                <p>ASSOCIATE HEAD</p>
-              </div>
-            </div>
-
-            <h2>Public relations Team</h2>
-            <div className="img-contianer">
-              <div>
-                <img src="/logo192.png" alt="" />
-                <p>Rajat Bisht</p>
-                <p>HEAD</p>
-              </div>
-            </div>
-            <div className="img-contianer">
-              <div>
-                <img src="/logo192.png" alt="" />
-                <p>Rohin Meharotra</p>
-                <p>ASSOCIATE HEAD</p>
-              </div>
-              <div>
-                <img src="/logo192.png" alt="" />
-                <p>Vansh Chauhan</p>
-                <p>ASSOCIATE HEAD</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import "./EventCarousel.css"; // You'll need to create this CSS file for custom styles
+import EventDetails from "../EventDetails/EventDetails";
+import { events } from "../../utils/events";
+import { Link } from "react-router-dom";
 
 function EventCarousel() {
   useEffect(() => {
@@ -103,36 +106,6 @@ function EventCarousel() {
     wrapper.addEventListener("mouseleave", autoPlay);
     // autoPlay();
   }, []);
-  const events = [
-    {
-      title: "java pathshala",
-      image: require("./Assets/1.jpeg"),
-    },
-    {
-      title: "codi vent",
-      image: require("./Assets/2.png"),
-    },
-    {
-      title: "quarantine programmers",
-      image: require("./Assets/3.png"),
-    },
-    {
-      title: "web portfolio",
-      image: require("./Assets/4.png"),
-    },
-    {
-      title: "buggymania 2.0",
-      image: require("./Assets/5.png"),
-    },
-    {
-      title: "infosec talk",
-      image: require("./Assets/6.png"),
-    },
-    {
-      title: "c++ pathshala",
-      image: require("./Assets/7.png"),
-    },
-  ];
 
   return (
     <div className="event-carousel-container">
@@ -145,12 +118,20 @@ function EventCarousel() {
       <div class="wrapper">
         <ul class="carousel">
           {events.map((event) => (
-            <li class="card">
-              <div class="img">
-                <img src={event.image} alt="img" draggable="false" />
-              </div>
-              <h2>{event.title}</h2>
-            </li>
+            <Link
+              to={`/event/${event.id}`}
+              style={{
+                textDecoration: "none",
+                color: "white",
+              }}
+            >
+              <li class="card">
+                <div class="img">
+                  <img src={event.image} alt="img" draggable="false" />
+                </div>
+                <h2>{event.title}</h2>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
