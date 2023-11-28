@@ -34,7 +34,7 @@
 }
 
 .eventdetails-heading {
-  font-size: 68px;
+  font-size: 72px;
   font-weight: 900;
   text-align: center;
   color: #006fee;
@@ -80,7 +80,7 @@
     border-width: 5px;
   }
   .eventdetails-heading {
-    font-size: 48px;
+    font-size: 42px;
   }
   .event-description {
     width: 100%;
