@@ -109,12 +109,7 @@ function EventCarousel() {
 
   return (
     <div className="event-carousel-container">
-      <img
-        src={require("./Assets/arrow_left.png")}
-        alt="<"
-        class="left"
-        id="left"
-      />
+      <img src={"/Assets/arrow_left.png"} alt="<" class="left" id="left" />
       <div class="wrapper">
         <ul class="carousel">
           {events.map((event) => (
@@ -135,12 +130,7 @@ function EventCarousel() {
           ))}
         </ul>
       </div>
-      <img
-        src={require("./Assets/arrow_right.png")}
-        alt=""
-        class="right"
-        id="right"
-      />
+      <img src={"/Assets/arrow_right.png"} alt="" class="right" id="right" />
     </div>
   );
 }
