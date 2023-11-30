@@ -70,6 +70,7 @@ function HomePage() {
       <video autoPlay muted loop id="myVideo" className="bgVideo">
         <source src="bgVideo.mp4" type="video/mp4" />
       </video>
+      <div className="overlay-sm"></div>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}

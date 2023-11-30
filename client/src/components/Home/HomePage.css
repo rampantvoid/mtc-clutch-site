@@ -16,6 +16,10 @@
   object-fit: cover !important;
 }
 
+.overlay-sm {
+  display: none;
+}
+
 .home-title-sm {
   display: none;
 }
@@ -203,6 +207,15 @@
     justify-content: center;
   }
 
+  .overlay-sm {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
   .home-title {
     display: none;
   }
@@ -212,7 +225,7 @@
   .home-title-sm p {
     margin: 0;
     font-size: 52px;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
   }
   .hero-buttons {
