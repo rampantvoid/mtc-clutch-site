@@ -67,7 +67,7 @@ function HomePage() {
 
   return (
     <>
-      <video autoplay={true} muted loop id="myVideo" className="bgVideo">
+      <video autoPlay muted loop id="myVideo" className="bgVideo">
         <source src="bgVideo.mp4" type="video/mp4" />
       </video>
       <Modal
