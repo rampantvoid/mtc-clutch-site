@@ -32,12 +32,28 @@ function Footer() {
           <div className="socials">
             <p>Connect With Us</p>
             <div className="icons">
-              <img src="/insta.png" alt="" />
-              <img src="/linkedin.png" alt="" />
-              <img src="/yt.png" alt="" />
+              <a href="https://www.instagram.com/upesmtc/" target="_blank">
+                <img src="/insta.png" alt="" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/upesmtc/mycompany/"
+                target="_blank"
+              >
+                <img src="/linkedin.png" alt="" />
+              </a>
+
+              <a href="https://www.youtube.com/@upesmtc6148" target="_blank">
+                <img src="/yt.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
+        {/* <div className="copyright">
+          <p className="copyright-info">
+            COPYRIGHT &#169; MICROSOFT TECHNICAL COMMUNITY. ALL RIGHTS RESERVED
+          </p>
+        </div> */}
       </footer>
     </>
   );

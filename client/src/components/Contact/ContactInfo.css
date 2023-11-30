@@ -10,17 +10,14 @@
 
 .contact-details {
   flex: 1;
-
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
-  align-items: center;
   gap: 40px;
 }
 
 .contact-details div {
-  margin-left: 50px;
+  margin-left: 100px;
   display: flex;
   gap: 15px;
 }
@@ -78,9 +75,14 @@
     gap: 50px;
     width: 100%;
   }
-
+  .contact-heading h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2em;
+  }
   .contact-heading div {
     width: 100%;
+    display: none;
   }
 
   .contact-details {

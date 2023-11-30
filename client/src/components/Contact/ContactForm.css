@@ -11,7 +11,6 @@
   flex-direction: column;
   gap: 10px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 50px;
 }
 
@@ -30,8 +29,9 @@
 
 .form-section h3 {
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
   font-size: 2em;
-  font-weight: bolder;
   letter-spacing: 2px;
 }
 
@@ -61,7 +61,7 @@ form {
   outline: none;
   border: none;
   border-radius: 25px;
-  width: 100%;
+  /* width: 100%; */
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
   transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 }
@@ -117,7 +117,7 @@ textarea {
   }
 
   .heading-container p {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .heading-container {
@@ -125,7 +125,7 @@ textarea {
   }
 
   .form-section {
-    margin-right: 40px;
+    /* margin-right: 40px; */
   }
 
   .form-section form div label {
@@ -133,7 +133,7 @@ textarea {
   }
 
   .btn {
-    width: 50%;
+    width: 100%;
     margin-bottom: 30px;
     align-self: self-start;
   }

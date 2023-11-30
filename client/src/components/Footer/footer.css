@@ -1,14 +1,16 @@
 .footer {
   background: #000;
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
 .footer-wrapper {
+  padding: 50px 0;
   width: 100%;
   height: 200px;
   margin: 0 295px;
@@ -43,8 +45,9 @@
   flex-direction: column;
   gap: 10px;
   justify-content: center;
-  border-left: 1px solid white;
+  border-left: 3px solid white;
   height: 100%;
+  padding-left: 20px;
 }
 .reachus {
   font-weight: 700;
@@ -97,7 +100,8 @@
 
 .socials {
   height: 100%;
-  border-left: 1px solid white;
+  border-left: 3px solid white;
+  padding-left: 20px;
 }
 
 .socials p {
@@ -121,6 +125,17 @@
   height: 40px;
 }
 
+.copyright {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.copyright-info {
+  width: 100%;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     border-top: 1px solid white;
@@ -132,12 +147,14 @@
     flex-direction: column;
     gap: 0px;
     height: 100%;
+    padding-top: 0;
   }
   .footer-logo img {
-    width: 50px;
+    width: 80px;
   }
   .footer-logo {
     padding: 30px;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,5 +186,8 @@
   .icons {
     margin: 0;
     gap: 70px;
+  }
+  .copyright-info {
+    font-size: 10px;
   }
 }

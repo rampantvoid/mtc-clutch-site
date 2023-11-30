@@ -1,9 +1,40 @@
 import React, { useEffect, useState } from "react";
+import Modal from "react-modal";
+import ReactDOM from "react-dom";
 import "./HomePage.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
+
+Modal.setAppElement("#root");
 
 function HomePage() {
   const navigate = useNavigate();
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = "#f00";
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   const techIcons = [
     { name: "github", radius: 250 },
     { name: "nodejs", radius: 200 },
@@ -36,9 +67,44 @@ function HomePage() {
 
   return (
     <>
+      <video autoplay={true} muted loop id="myVideo" className="bgVideo">
+        <source src="bgVideo.mp4" type="video/mp4" />
+      </video>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div className="registration-closed-modal">
+          <h2
+            ref={(_subtitle) => (subtitle = _subtitle)}
+            style={{ color: "red", marginTop: "0px" }}
+          >
+            Registrations Closed
+          </h2>
+          <p>Registrations are currently closed. Please check again later.</p>
+          <button onClick={closeModal} className="close-btn">
+            close
+          </button>
+        </div>
+      </Modal>
       <div className="home-container">
+        {/* <div className="absolute">
+          <div className="absolute inset-0 justify-center">
+            <div className="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+            <div className="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+            <div className="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+          </div>
+        </div> */}
         <div className="content-wrapper">
-          <div className="home-title-sm">
+          <div
+            className="home-title-sm"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <p>Microsoft</p>
             <p>Technical</p>
             <p>Community</p>
@@ -51,7 +117,12 @@ function HomePage() {
               </button>
             </div>
           </div>
-          <div className="home-title">
+          <div
+            className="home-title"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <p className="main-title">
               <span className="cap-letter">M</span>icrosoft
             </p>
@@ -60,24 +131,25 @@ function HomePage() {
             </p>
             <div className="line"></div>
             <div className="hero-buttons">
-              <button className="register-button">
+              <button className="register-button" onClick={openModal}>
                 register <span className="arrow-right">&#x2192;</span>
               </button>
-
-              <button
-                className="see-button"
-                onClick={() => {
-                  navigate("/team");
-                }}
-              >
-                see more <span className="arrow-right">&#x2192;</span>
-              </button>
+              <AnchorLink href="#about" className="seemore">
+                <button className="see-button">
+                  see more <span className="arrow-right">&#x2192;</span>
+                </button>
+              </AnchorLink>
             </div>
           </div>
 
-          <div className="logo-section">
+          <div
+            className="logo-section"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
             <img
-              src={require("./assets/Mtc.png")}
+              src={"Assets/homeAssets/Mtc.png"}
               alt="Microsoft Logo"
               className="main-logo"
               style={{
@@ -100,7 +172,7 @@ function HomePage() {
                     }}
                   >
                     <img
-                      src={require(`./assets/${item.name}.png`)}
+                      src={`Assets/homeAssets/${item.name}.png`}
                       alt={item.name}
                       key={index}
                       className={`icon-hover`}

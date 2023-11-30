@@ -1,10 +1,12 @@
 import React from "react";
 import "./Gallery.css";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+import Masonry from "react-responsive-masonry";
 
 function Gallery() {
+  const [isLoading, setLoading] = React.useState(true);
+  React.useEffect(() => {
+    console.log(isLoading);
+  }, []);
   const pictures = [
     "d1ebd7b7-3cb9-4191-b02f-d5691dfa200c-1d.jpg",
     "907fa360-90e7-40e3-810b-0750b752d0e4-1g.jpg",
@@ -42,7 +44,7 @@ function Gallery() {
             <h2>Get a glipse of who we are and what we do</h2>
           </div>
           {/* <div className="image-container"> */}
-          <Masonry columnsCount={3} gutter="1rem">
+          <Masonry gutter="1rem" columnsCount={2}>
             {pictures.map((picture) => {
               return (
                 <div
@@ -54,13 +56,16 @@ function Gallery() {
                     overflow: "hidden",
                   }}
                 >
-                  {(
-                    <img
-                      className="gallery-image"
-                      src={`https://utfs.io/f/${picture}`}
-                      loading="eager"
-                    />
-                  ) || <Skeleton height={"500px"} />}
+                  <img
+                    className="gallery-image"
+                    src={`https://utfs.io/f/${picture}`}
+                    loading="eager"
+                    onLoad={() => {
+                      setLoading(false);
+                      console.log(isLoading);
+                    }}
+                    alt=""
+                  />
                 </div>
               );
             })}

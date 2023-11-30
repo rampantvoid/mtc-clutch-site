@@ -26,16 +26,19 @@ function About() {
 
   return (
     <>
-      <div className="about-container">
+      <div className="about-container" id="about">
         <div className="about-wrapper">
           <div className="abt-img-wrapper">
             <div className="empty-div ">
-              <div className="abt-img-glass gradient-border">
-                <img src={require("./about.JPG")} alt="" />
+              <div
+                className="abt-img-glass gradient-border"
+                data-aos="fade-right"
+              >
+                <img src="/about.JPG" alt="" />
               </div>
             </div>
           </div>
-          <div className="abt-content-wrapper">
+          <div className="abt-content-wrapper" data-aos="zoom-in">
             <h1 className="abt-heading">who are we?</h1>
 
             <h2
@@ -56,10 +59,12 @@ function About() {
               in their careers. We have come a long way since then, and still
               have many more goals to reach. Microsoft Technical Community only
               focuses on technical events and approaches them with complete
-              professionalism. "Pathshala" sessions, "C{" "}
-              <span className="read-more" style={{ fontWeight: "500" }}>
-                ...read more
-              </span>
+              professionalism. ‘Pathshala’ sessions, ‘Career Pathway’ sessions,
+              ‘Buggymania’ and ‘Career Drive’ our main flagship event are just
+              some of the events we conduct over a year with the sole purpose of
+              creating better IT professionals. The team at Microsoft Technical
+              Community is full of hard-working and professional individuals,
+              who are always learning and teaching something new.
             </p>
           </div>
         </div>

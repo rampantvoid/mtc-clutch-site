@@ -5,13 +5,6 @@ import EventCarousel from "../EventCarousel/EventCarousel.jsx";
 function EventsPage() {
   return (
     <>
-      <video
-        src={require("./events_vid.mp4")}
-        className="events-video"
-        autoPlay
-        loop
-        muted
-      ></video>
       <div className="events-container">
         <div className="events-wrapper">
           <div className="events-heading">

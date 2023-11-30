@@ -3,13 +3,13 @@
   width: 100%;
   height: 100%;
   /* background: #000; */
-  background-image: url("/public/bg2.jpg");
-  background-size: 100% 100%;
+  background-image: url("/public/galleryBG.svg");
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  padding-bottom: 10px;
+  padding-bottom: 100px;
 }
 
 .gallery-wrapper {
@@ -99,6 +99,7 @@
   .galleryHeading h2 {
     font-size: 24px;
     width: 100%;
+    text-align: left;
   }
 
   .image-wrapper {

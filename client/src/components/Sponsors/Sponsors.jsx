@@ -4,20 +4,20 @@ import "./Sponsors.css";
 function Sponsors() {
   const sponsors = [
     {
-      image: require("./assets/zuno.png"),
+      image: "/sponsors/zuno.png",
       name: "Zuno",
       description:
-        "Coding Ninjas is a place that trains passionate people in various technologies. Our core programs are intensive, immersive training that transforms people into outstanding developers.",
+        "Zuno is a platform that offers paid internships and jobs for freshers. With thousands of openings on our platform, we are on our way to helping students and fresh graduates find the right career opportunities to kickstart their careers.",
     },
 
     {
-      image: require("./assets/wayspire.png"),
+      image: "/sponsors/wayspire.png",
       name: "Wayspire",
       description:
-        "Coding Ninjas is a place that trains passionate people in various technologies. Our core programs are intensive, immersive training that transforms people into outstanding developers.",
+        "WAYSPIRE ED-TECH PVT LTD is a dedicated E-learning platform to creating a community of lifelong learners. An E-learning platform with the goal of competence to students for the workforce and assisting you in landing your desired Job/ University",
     },
     {
-      image: require("./assets/coding-ninja.png"),
+      image: "/sponsors/coding-ninja.png",
       name: "Coding Ninjas",
       description:
         "Coding Ninjas is a place that trains passionate people in various technologies. Our core programs are intensive, immersive training that transforms people into outstanding developers.",
@@ -34,9 +34,11 @@ function Sponsors() {
           <div className="sponsor-content">
             {sponsors.map((sponsor) => (
               <div className="sponsor-item">
-                <img src={sponsor.image} alt={sponsor.name} />
-                <div className="item-content">
-                  <h3>{sponsor.name}</h3>
+                <div className="sponsor-item-content front">
+                  <img src={sponsor.image} alt={sponsor.name} />
+                </div>
+
+                <div className="sponsor-item-content back">
                   <p>{sponsor.description}</p>
                 </div>
               </div>

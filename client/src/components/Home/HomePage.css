@@ -1,18 +1,36 @@
 .home-container {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   width: 100%;
   height: 100vh;
-  background-image: url("./assets/Cover.svg");
+  /* background-image: url("/public/Assets/homeAssets/Cover.svg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   display: flex;
   color: white;
-  background-attachment: fixed;
+}
+
+.bgVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .home-title-sm {
   display: none;
+}
+
+.registration-closed-modal {
+  padding: 25px;
+}
+
+.close-btn {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .content-wrapper {
@@ -69,8 +87,11 @@
   transition: all 0.3s ease-out;
 }
 
-.see-button {
+.seemore {
   width: 40%;
+}
+.see-button {
+  width: 100%;
   height: 70px;
   border-radius: 40px;
   border: none;

@@ -3,12 +3,13 @@
   width: 100%;
   height: 100%;
   /* background: #000; */
-  background-image: url("/public/bg3.jpg");
+  background-image: url("/public/contactBG.svg");
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  padding-bottom: 100px;
 }
 
 .con-wrapper {
