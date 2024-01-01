@@ -39,7 +39,7 @@ const Management = [
   },
   {
     name: "Rajat Bisht",
-    position: "Management Director",
+    position: "Managerial Director",
     image: "/team_img/Rajat_Bisht.jpg",
     linkedinID: "https://www.linkedin.com/in/rajat-bisht-25b208237",
   },
@@ -81,8 +81,8 @@ const WorkingTeam = [
       "https://www.linkedin.com/in/hardik-raj-kapoor-03a680183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Vedanshi Samath",
-    position: "Joint-secrectry",
+    name: "Vedanshi Samant",
+    position: "Joint-Secrectry",
     image: "/team_img/Vedanshi.JPG",
     linkedinID: "https://www.linkedin.com/in/vedanshi-samant-709879278/",
   },
@@ -170,7 +170,7 @@ const WorkingTeam = [
 const StudentCoordinator = [
   {
     name: "Aditya Kumar",
-    image: "/team_img/Aditya.jpeg",
+    image: "/team_img/aditya.png",
     linkedinID: "https://www.linkedin.com/in/aditya-kumar-220053208/",
   },
   {
@@ -180,12 +180,12 @@ const StudentCoordinator = [
   },
   {
     name: "Yash Raj Singh",
-    image: "/team_img/yash raj .JPG",
+    image: "/team_img/y1.png",
     linkedinID: "https://www.linkedin.com/in/yash-raj-singh-yrs/",
   },
   {
     name: "Rishabh Dhanger",
-    image: "/team_img/rishabh dhanger.jpeg",
+    image: "/team_img/rishabh.png",
     linkedinID: "https://www.linkedin.com/in/rishabh-dhangar/",
   },
   {
