@@ -66,8 +66,8 @@
 }
 
 .img-contianer img {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   object-fit: cover;
   object-position: 0 0.7px;
