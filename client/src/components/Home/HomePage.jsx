@@ -128,7 +128,7 @@ function HomePage() {
               <span className="cap-letter">M</span>icrosoft
             </p>
             <p>
-              technincal <br /> community
+              technical <br /> community
             </p>
             <div className="line"></div>
             <div className="hero-buttons">

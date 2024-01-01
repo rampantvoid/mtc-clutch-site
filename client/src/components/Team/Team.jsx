@@ -6,12 +6,14 @@ const facultyCoordinators = [
   {
     name: "Ajay Kumar",
     image: "/team_img/Ajay.jpeg",
-    linkedinID: "https://www.linkedin.com/in/ajay-kumar-71267820?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinID:
+      "https://www.linkedin.com/in/ajay-kumar-71267820?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     name: "Keshav Sinha",
     image: "/team_img/keshav.jpeg",
-    linkedinID: "https://www.linkedin.com/in/dr-keshav-sinha-a764b01ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinID:
+      "https://www.linkedin.com/in/dr-keshav-sinha-a764b01ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
 ];
 
@@ -32,7 +34,8 @@ const Management = [
     name: "Ananya Singh",
     position: "Director of Operaion",
     image: "/team_img/Ananya_singh.jpg",
-    linkedinID: "https://www.linkedin.com/in/ananya-singh-15r25-8r1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinID:
+      "https://www.linkedin.com/in/ananya-singh-15r25-8r1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Rajat Bisht",
@@ -41,8 +44,8 @@ const Management = [
     linkedinID: "https://www.linkedin.com/in/rajat-bisht-25b208237",
   },
   {
-    name: "Mimansa",
-    position: "Treasure",
+    name: "Mimansa Pathania",
+    position: "Treasurer",
     image: "/team_img/miamansa.JPG",
     linkedinID: "https://www.linkedin.com/in/mimansa-pathania-3b38a2223/",
   },
@@ -74,10 +77,11 @@ const WorkingTeam = [
     name: "Hardik Raj Kappor",
     position: "Internal Operation Head ",
     image: "/team_img/Hardik.png",
-    linkedinID: "https://www.linkedin.com/in/hardik-raj-kapoor-03a680183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinID:
+      "https://www.linkedin.com/in/hardik-raj-kapoor-03a680183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Vedanshi Samrat",
+    name: "Vedanshi Samath",
     position: "Joint-secrectry",
     image: "/team_img/Vedanshi.JPG",
     linkedinID: "https://www.linkedin.com/in/vedanshi-samant-709879278/",
@@ -86,7 +90,8 @@ const WorkingTeam = [
     name: "Priyanshu Butola ",
     position: "Technical Head",
     image: "/team_img/priyanshu.jpg",
-    linkedinID: "https://www.linkedin.com/in/priyanshu-butola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinID:
+      "https://www.linkedin.com/in/priyanshu-butola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     name: "Vansh Raj Chauhan",
@@ -104,7 +109,8 @@ const WorkingTeam = [
     name: "Sanya Sinha",
     position: "Design Head",
     image: "/team_img/Sanya_Sinha.jpg",
-    linkedinID: "https://www.linkedin.com/in/sanya-sinha-a859ab244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinID:
+      "https://www.linkedin.com/in/sanya-sinha-a859ab244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Anish",
@@ -116,19 +122,22 @@ const WorkingTeam = [
     name: "Samriddh Sharma",
     position: "Management and Record Head",
     image: "/team_img/samriddh .JPG",
-    linkedinID: "https://www.linkedin.com/in/samriddh-sharma-754565258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinID:
+      "https://www.linkedin.com/in/samriddh-sharma-754565258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Yashpal Singh",
     position: "Management and Record Associate Head",
     image: "/team_img/yashpal.JPG",
-    linkedinID: "https://www.linkedin.com/in/yashpal-singh-230072262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinID:
+      "https://www.linkedin.com/in/yashpal-singh-230072262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Isha Yadav",
     position: "Management and Record Associate Head",
     image: "/team_img/Isha_Yadav.jpg",
-    linkedinID: " https://www.linkedin.com/in/isha-yadav-4ab73a2a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinID:
+      " https://www.linkedin.com/in/isha-yadav-4ab73a2a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Swati pal ",
@@ -147,7 +156,8 @@ const WorkingTeam = [
     name: "Kunal Sharma ",
     position: "Editorial Associate Head",
     image: "/team_img/Kunal_Sharma.jpg",
-    linkedinID: "https://www.linkedin.com/in/kunal-shubh-sharma-6303a72a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedinID:
+      "https://www.linkedin.com/in/kunal-shubh-sharma-6303a72a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Chaitanya ",
@@ -181,7 +191,8 @@ const StudentCoordinator = [
   {
     name: "Tanish Garg",
     image: "/team_img/tanish.JPG",
-    linkedinID: "https://www.linkedin.com/in/tanish-garg-5114aa236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinID:
+      "https://www.linkedin.com/in/tanish-garg-5114aa236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
 ];
 
@@ -189,17 +200,20 @@ const Alumni = [
   {
     name: "Rashi Trikha",
     image: "/team_img/Rashi.jpg",
-    linkedinID: "https://www.linkedin.com/in/rashi-trikha-0832391a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinID:
+      "https://www.linkedin.com/in/rashi-trikha-0832391a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     name: "Kartikey Khanna",
     image: "/team_img/Kartikeya.jpg",
-    linkedinID: "https://www.linkedin.com/in/kartikeya-khanna-1274b7194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinID:
+      "https://www.linkedin.com/in/kartikeya-khanna-1274b7194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     name: "Vishal Gupta",
     image: "/team_img/Vishal1.webp",
-    linkedinID: "https://www.linkedin.com/in/vishal-gupta-6b6123194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedinID:
+      "https://www.linkedin.com/in/vishal-gupta-6b6123194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
 ];
 

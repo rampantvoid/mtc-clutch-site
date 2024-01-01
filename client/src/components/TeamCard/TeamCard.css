@@ -25,6 +25,7 @@
   height: 160px;
   border-radius: 100%;
   border: 3px solid #006fee;
+  object-fit: cover;
 }
 
 .team-linkedin {
