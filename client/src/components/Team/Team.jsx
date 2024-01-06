@@ -116,7 +116,7 @@ const WorkingTeam = [
     name: "Anish",
     position: "Design Associate Head",
     image: "/team_img/Anish.jpg",
-    linkedinID: "",
+    linkedinID: "https://www.upesmtc.com/ ",
   },
   {
     name: "Samriddh Sharma",
