@@ -67,7 +67,7 @@ function HomePage() {
 
   return (
     <>
-      <video autoPlay muted loop id="myVideo" className="bgVideo">
+      <video autoPlay muted loop id="myVideo" className="bgVideo" controls>
         <source src="bgVideo.mp4" type="video/mp4" />
       </video>
       <div className="overlay-sm"></div>

@@ -200,11 +200,27 @@
   cursor: pointer;
 }
 
+.bgVideo::-webkit-media-controls-play-button,
+    .bgVideo::-webkit-media-controls-start-playback-button {
+      display: none !important;
+    }
+
+    .bgVideo::-webkit-media-controls {
+      display: none !important;
+    }
+
+    .bgVideo::media-controls {
+      display: none !important;
+    }
+
+    .bgVideo::-webkit-media-controls-playback-rate {
+      display: none !important;
+    }
+
+
 @media screen and (max-width: 768px) {
   .logo-section {
     display: none !important;
-  }
-  .home-container {
   }
 
   .content-wrapper {
