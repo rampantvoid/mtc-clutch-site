@@ -56,6 +56,17 @@ function HomePage() {
     }, 100);
   }, []);
 
+
+    // Add event listener to disable right-click
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+
+    // Cleanup the event listener on component unmount
+
+
   const calculateIconPosition = (index, totalIcons, radius) => {
     const angle = (index / totalIcons) * 2 * Math.PI;
     // const centerX = window.innerWidth / 2;
@@ -67,6 +78,7 @@ function HomePage() {
 
   return (
     <>
+
       <video autoPlay muted loop id="myVideo" className="bgVideo" controls>
         <source src="bgVideo.mp4" type="video/mp4" />
       </video>
