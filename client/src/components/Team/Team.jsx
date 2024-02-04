@@ -27,7 +27,7 @@ const Management = [
   {
     name: "Siddhant Srivastava",
     position: "Vice-President",
-    image: "/team_img/Siddhant_Srivastava.JPG",
+    image: "/team_img/Screenshot from 2024-02-04 14-09-46.png",
     linkedinID: "https://www.linkedin.com/in/siddhantsrivastava21/",
   },
   {

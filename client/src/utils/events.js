@@ -12,7 +12,7 @@ export const events = [
   },
   {
     id: "2",
-    title: "codi vent",
+    title: "codivent",
     image: "/Assets/2.png",
     description:
       "Microsoft Technical Community was glad to announce its collaboration with HackerEarth HUB UPES for its event named “CodiVent” which was conducted on 20th July, 2021. This event was organised for the students to prove their programming and logic building skills. The duration for this event was of an hour that is 9:30 pm-10:30 pm. This event has been organised and managed by MTC and the platform is provided by HackerEarth HUB UPES.The event was specifically about coding where all the participants were asked to solve 4 coding challenges within the given time limit. Platform for this coding contest was HackerEarth. The event was headed and organised by working committee of Microsoft Technical Community. In order to help maximum people, this contest was kept free and open to all i.e., students from any field and university could apply for this event. The competition offers young programmers the opportunity to measure their capabilities as well as compare themselves to other programmers and show off their coding skills. There was a good number of participation and to encourage the dedication and to motivate the participants, it was planned to provide participation certificates to all the students participating in CodiVent and merit certificates to those who score in top 3 among all..",
