@@ -12,6 +12,7 @@ import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import EventDetails from "./components/EventDetails/EventDetails";
+import EventDecodingDSA from "./Components/EventDecodingDSA";
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
                 <HomePage />
                 <About />
                 <EventsPage />
+                <EventDecodingDSA />
                 <Sponsors />
               </>
             }
