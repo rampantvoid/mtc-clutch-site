@@ -76,4 +76,15 @@ export const events = [
     details_2:
       "It was our immense pleasure to hear that the participants asked us to encourage more sessions like this. A Certificate Of Participation was provided to those who attended the session. The event was well organized and systematic, attending the queries of the participants was the first priority. The valuable talks of our former President Mr. Manik Garg were loved and appreciated by all. People were eager to attend more such sessions from him and were highly satisfied with the knowledge delivered by him. In all, it was a great success and we look forward to add more stars to our Microsoft Technical Community",
   },
+  {
+    id: "8",
+    title: "decoding dsa",
+    image: "/Assets/8th.jpeg",
+    description:
+      "Embark on an exciting journey into the world of Data Structures and Algorithms with MTC! Join us every Wednesday, Thursday, and Friday from 5:00 PM to 6:00 PM for an engaging workshop series designed to elevate your coding skills. Led by experienced mentors, our interactive sessions offer hands-on learning opportunities, practical exercises, and a supportive community atmosphere.",
+    details_1:
+      " Prepare to be captivated by interactive sessions that breathe life into abstract concepts, igniting your passion for problem-solving. With each practical exercise, you'll navigate the intricacies of coding with finesse, honing your skills under the guidance of seasoned mentors dedicated to your success.",
+    details_2:
+      "Whether you're a seasoned professional seeking to refine your craft or a curious newcomer eager to explore the possibilities, our doors are open to all. Discover the power of Data Structures and Algorithms as you embark on a journey of discovery, innovation, and limitless potential.",
+  },
 ];
