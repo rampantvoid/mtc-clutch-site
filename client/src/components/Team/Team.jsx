@@ -17,6 +17,37 @@ const facultyCoordinators = [
   },
 ];
 
+
+const StudentCoordinator = [
+  {
+    name: "Aditya Kumar",
+    image: "/team_img/aditya.png",
+    linkedinID: "https://www.linkedin.com/in/aditya-kumar-220053208/",
+  },
+  {
+    name: "Sanidhya Soni",
+    image: "/team_img/sanidhya soni.png",
+    linkedinID: "https://www.linkedin.com/in/sanidhya-soni/",
+  },
+  {
+    name: "Yash Raj Singh",
+    image: "/team_img/y1.png",
+    linkedinID: "https://www.linkedin.com/in/yash-raj-singh-yrs/",
+  },
+  {
+    name: "Rishabh Dhanger",
+    image: "/team_img/rishabh.png",
+    linkedinID: "https://www.linkedin.com/in/rishabh-dhangar/",
+  },
+  {
+    name: "Tanish Garg",
+    image: "/team_img/tanish.JPG",
+    linkedinID:
+      "https://www.linkedin.com/in/tanish-garg-5114aa236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
+];
+
+
 const Management = [
   {
     name: "Vibhor Minocha",
@@ -167,35 +198,6 @@ const WorkingTeam = [
   },
 ];
 
-const StudentCoordinator = [
-  {
-    name: "Aditya Kumar",
-    image: "/team_img/aditya.png",
-    linkedinID: "https://www.linkedin.com/in/aditya-kumar-220053208/",
-  },
-  {
-    name: "Sanidhya Soni",
-    image: "/team_img/sanidhya soni.png",
-    linkedinID: "https://www.linkedin.com/in/sanidhya-soni/",
-  },
-  {
-    name: "Yash Raj Singh",
-    image: "/team_img/y1.png",
-    linkedinID: "https://www.linkedin.com/in/yash-raj-singh-yrs/",
-  },
-  {
-    name: "Rishabh Dhanger",
-    image: "/team_img/rishabh.png",
-    linkedinID: "https://www.linkedin.com/in/rishabh-dhangar/",
-  },
-  {
-    name: "Tanish Garg",
-    image: "/team_img/tanish.JPG",
-    linkedinID:
-      "https://www.linkedin.com/in/tanish-garg-5114aa236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-  },
-];
-
 const Alumni = [
   {
     name: "Rashi Trikha",
@@ -241,6 +243,18 @@ function Team() {
               ))}
             </div>
 
+            <h2>Our Student Coordinator</h2>
+
+<div className="wrapper-div">
+  {StudentCoordinator.map((sc) => (
+    <TeamCard
+      name={sc.name}
+      image={sc.image}
+      linkedinID={sc.linkedinID}
+    />
+  ))}
+</div>
+
             <h2>Management Team</h2>
 
             <div className="wrapper-div">
@@ -280,17 +294,7 @@ function Team() {
               ))}
             </div>
 
-            <h2>Our Student Coordinator</h2>
-
-            <div className="wrapper-div">
-              {StudentCoordinator.map((sc) => (
-                <TeamCard
-                  name={sc.name}
-                  image={sc.image}
-                  linkedinID={sc.linkedinID}
-                />
-              ))}
-            </div>
+         
 
             <h2>Our Alumni</h2>
 
