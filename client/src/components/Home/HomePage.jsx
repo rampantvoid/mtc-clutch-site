@@ -124,7 +124,7 @@ function HomePage() {
             <div className="hero-buttons">
               <button className="register-button">
                 register <span className="arrow-right">&#x2192;</span>
-              </button>
+              </button>   
               <button className="see-button">
                 see more <span className="arrow-right">&#x2192;</span>
               </button>
