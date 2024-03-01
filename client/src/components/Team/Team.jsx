@@ -35,7 +35,7 @@ const StudentCoordinator = [
     linkedinID: "https://www.linkedin.com/in/yash-raj-singh-yrs/",
   },
   {
-    name: "Rishabh Dhanger",
+    name: "Rishabh Dhangar",
     image: "/team_img/rishabh.png",
     linkedinID: "https://www.linkedin.com/in/rishabh-dhangar/",
   },
@@ -63,7 +63,7 @@ const Management = [
   },
   {
     name: "Ananya Singh",
-    position: "Director of Operaion",
+    position: "Director of Operations",
     image: "/team_img/Ananya_singh.jpg",
     linkedinID:
       "https://www.linkedin.com/in/ananya-singh-15r25-8r1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -91,7 +91,7 @@ const Advisor = [
   },
   {
     name: "Insiya Rizvi",
-    position: "Management Advisor",
+    position: "Management & Records Advisor",
     image: "/team_img/Insiya.JPG",
     linkedinID: "https://www.linkedin.com/in/insiya-rizvi-118702178/",
   },
