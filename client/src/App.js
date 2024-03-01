@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import EventDetails from "./components/EventDetails/EventDetails";
 
+
 function App() {
   useEffect(() => {
     AOS.init();
