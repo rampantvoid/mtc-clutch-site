@@ -1,41 +1,61 @@
-import { React, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Modal from "react-modal";
 import ReactDOM from "react-dom";
 import Hamburger from "hamburger-react";
 import "./Navbar.css";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
-
 Modal.setAppElement("#root");
+
+
+const LoginForm = ({ onClose }) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (username === "admin" && password === "password") {
+      onClose();
+      setError("");
+    } else {
+      setError("Invalid username or password");
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="login-form">
+      <div className="form-field">
+        <h2>LOGIN - IN</h2>
+        <label htmlFor="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+      </div>
+      <div className="form-field">
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </div>
+      <div className="form-field">
+        <button type="submit" className="login-btn">
+          Login
+        </button>
+      </div>
+    </form>
+  );
+};
 
 function Navbar() {
   const location = useLocation();
-
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isSmall, setScreen] = useState(false);
   const [toggle, setToggle] = useState(false);
 
@@ -77,28 +97,43 @@ function Navbar() {
     }
   }, []);
 
+  const customStyles = {
+    overlay: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(0, 0, 0, 0.75)",
+    },
+    content: {
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      backgroundColor: "#fff",
+      padding: "20px",
+      border: "1px solid #ccc",
+      borderRadius: "5px",
+      maxWidth: "500px",
+      width: "100%",
+      boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
+    },
+  };
+
   return (
     <>
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <div className="registration-closed-modal">
-          <h2
-            ref={(_subtitle) => (subtitle = _subtitle)}
-            style={{ color: "red", marginTop: "0px" }}
-          >
-            In Devlopment
-          </h2>
-          <p>Feature comming soon.</p>
-          <button onClick={closeModal} className="close-btn">
-            close
-          </button>
-        </div>
-      </Modal>
+      <div className="login-wrapper">
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={() => setModalIsOpen(false)}
+          style={customStyles}
+          contentLabel="Login Pop-up"
+        >
+          <LoginForm onClose={() => setModalIsOpen(false)} />
+        </Modal>
+      </div>
+
       <div className="navbar">
         <div className="content-container">
           <div className="logo-wrapper">
@@ -147,8 +182,11 @@ function Navbar() {
             </Link>
           </div>
           <div className="login-wrapper">
-            <button className="login-button" onClick={openModal}>
-              login <img src={require("./assets/login-white.png")} alt="" />
+            <button
+              className="login-button"
+              onClick={() => setModalIsOpen(true)}
+            >
+              Login <img src={require("./assets/login-white.png")} alt="" />
             </button>
           </div>
         </div>
