@@ -111,58 +111,6 @@
   width: 100%;
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.form-field label {
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.form-field input {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  width: 90%;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.form-field input:focus {
-  outline: none;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.form-field button {
-  background-color: #006fee;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  width: 100%;
-}
-
-
-
-.error-message {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
-  text-align: left;
-}
 @media screen and (max-width: 768px) {
   .logo-wrapper img {
     width: 50px;
