@@ -137,6 +137,14 @@ const WorkingTeam = [
     linkedinID: "https://www.linkedin.com/in/shambhavee-srivastava-973494278/",
   },
   {
+    name: "Kanishka Tomar",
+    position: "Technical Associate Head",
+    image: "/team_img/kanishka2.jpeg",
+    linkedinID: "https://www.linkedin.com/in/kanishka-tomar-645174257/",
+  },
+
+
+  {
     name: "Sanya Sinha",
     position: "Design Head",
     image: "/team_img/Sanya_Sinha.jpg",
@@ -144,7 +152,7 @@ const WorkingTeam = [
       "https://www.linkedin.com/in/sanya-sinha-a859ab244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Anish",
+    name: "Anish Kothiyal",
     position: "Design Associate Head",
     image: "/team_img/Anish.jpg",
     linkedinID: "https://www.upesmtc.com/ ",
@@ -176,12 +184,6 @@ const WorkingTeam = [
     image: "/team_img/swati_Pal.jpg",
     linkedinID: "http://www.linkedin.com/in/swati-pal-upes",
   },
-  {
-    name: "Srishti Gupta ",
-    position: "Editorial Associate Head ",
-    image: "/team_img/Srishti_Gupta.jpg",
-    linkedinID: "https://www.linkedin.com/in/srishti-gupta-48b2441bb/",
-  },
 
   {
     name: "Kunal Sharma ",
@@ -195,6 +197,13 @@ const WorkingTeam = [
     position: "Public Relation Head ",
     image: "/team_img/chetanya.JPG",
     linkedinID: "https://www.linkedin.com/in/chetanya-jain-838016210/",
+  },
+
+  {
+    name: "Saarthak Gupta",
+    position: "Public Relation Associate Head ",
+    image: "/team_img/Sarthak3.png",
+    linkedinID: "https://www.linkedin.com/in/saarthak-gupta-11677b268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 

@@ -21,7 +21,7 @@ function Footer() {
             </div>
             <div className="contact">
               <img src={"/contact.png"} alt="" loading="lazy" />
-              <p>+91-99108 10462</p>
+              <p>+91-6284152883</p>
             </div>
             <div className="mail">
               <img src={"/mail.png"} alt="" loading="lazy" />
