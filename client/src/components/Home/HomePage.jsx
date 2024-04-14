@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "./HomePage.css";
 import { useNavigate } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
 
 const customStyles = {
   content: {
@@ -144,9 +145,11 @@ function HomePage() {
             </p>
             <div className="line"></div>
             <div className="hero-buttons">
-              <button className="register-button" onClick={openModal}>
-                register <span className="arrow-right">&#x2192;</span>
+              {/* <Link to="/current-event" className="register-button"> */}
+              <button className="register-button" onClick={()=> navigate("/current-event")}>
+                Tech Fuse 2.0 <span className="arrow-right">&#x2192;</span>
               </button>
+              {/* </Link> */}
               <AnchorLink href="#about" className="seemore">
                 <button className="see-button">
                   see more <span className="arrow-right">&#x2192;</span>

@@ -12,6 +12,7 @@ import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 import EventDetails from "./components/EventDetails/EventDetails";
+import OngoingEvent from "./components/OngoingEvent/OngoingEvent";
 
 
 function App() {
@@ -51,6 +52,15 @@ function App() {
             element={
               <>
                 <Team />
+              </>
+            }
+          />
+          <Route
+            path="/current-event"
+            exact
+            element={
+              <>
+                <OngoingEvent />
               </>
             }
           />
