@@ -34,7 +34,11 @@ const OngoingEvent = () => {
               Join us as we embark on this enlightening journey at TechFuse 2.0,
               shaping the future of database management together.
             </p>
-            <button className="one-button">Register Now</button>
+            <button className="one-button">
+              <a href="https://forms.gle/1rJcb4tbH2x5qBnx5">
+              Register Now
+              </a>              
+              </button>
           </div>
         </div>
       </div>
