@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 768px) {
   .event-detail-img {
-    width: 300px;
+    width: /*300px*/100%;
     border-width: 5px;
   }
   .eventdetails-heading {
@@ -98,6 +98,6 @@
     width: 100%;
   }
   .wrap-event {
-    width: 90%;
+    width: 100%;
   }
 }
