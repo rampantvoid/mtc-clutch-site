@@ -123,9 +123,19 @@ function HomePage() {
             <p>Technical</p>
             <p>Community</p>
             <div className="hero-buttons">
-              <button className="register-button">
+            {/*
+
+             <button className="register-button">
                 register <span className="arrow-right">&#x2192;</span>
-              </button>   
+              </button>  
+          
+            */}
+
+             <button className="register-button" onClick={()=> navigate("/current-event")}>
+                Tech Fuse 2.0 <span className="arrow-right">&#x2192;</span>
+              </button>
+              
+               
               <button className="see-button">
                 see more <span className="arrow-right">&#x2192;</span>
               </button>

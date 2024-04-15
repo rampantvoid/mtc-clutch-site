@@ -132,7 +132,7 @@
 
 @media screen and (max-width: 768px) {
   .about-container {
-    height: 100vh;
+    height: 100%;
   }
   .about-wrapper {
     flex-direction: column;
@@ -143,13 +143,17 @@
     margin-bottom: 300px;
   }
   .abt-img-glass {
-    width: 200px;
+    width: 200%;
   }
   .empty-div {
     display: none;
   }
   .abt-img-glass img {
-    width: 200px;
+    width: 200%;
+  }
+
+  .abt-content-wrapper h1 {
+    font-size: 20px;
   }
 
   .abt-content-wrapper {
