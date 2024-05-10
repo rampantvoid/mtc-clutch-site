@@ -160,7 +160,7 @@ const WorkingTeam = [
   {
     name: "Samriddh Sharma",
     position: "Management and Record Head",
-    image: "/team_img/samriddh .JPG",
+    image: "/team_img/Samridhh.jpeg",
     linkedinID:
       "https://www.linkedin.com/in/samriddh-sharma-754565258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
