@@ -132,7 +132,7 @@ function HomePage() {
             */}
 
              <button className="register-button" onClick={()=> navigate("/current-event")}>
-                Tech Fuse 2.0 <span className="arrow-right">&#x2192;</span>
+                Cognition 3.0 <span className="arrow-right">&#x2192;</span>
               </button>
               
                
