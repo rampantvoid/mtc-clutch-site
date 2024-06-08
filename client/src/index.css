@@ -2,10 +2,12 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 :root {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 @supports (font-variation-settings: normal) {
   :root {

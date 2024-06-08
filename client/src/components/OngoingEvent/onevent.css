@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
   
   .one-wrapper {
@@ -71,6 +72,20 @@
   }
 
   @media screen and (max-width: 900px) {
+   
+    .one-heading {
+      margin-top: 10px;
+      font-size: 45px;
+      padding-left: 111px;
+      padding-right: 100px;
+      width: 100%;
+  }
+
+  .one-event {
+    padding-left: 10px;
+  padding-right: 9px;
+ }
+   
     .one-counter {
       font-size: 40px;
       letter-spacing: 10px;
