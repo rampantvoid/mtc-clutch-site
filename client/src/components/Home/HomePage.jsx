@@ -157,7 +157,7 @@ function HomePage() {
             <div className="hero-buttons">
               {/* <Link to="/current-event" className="register-button"> */}
               <button className="register-button" onClick={()=> navigate("/current-event")}>
-                Tech Fuse 2.0 <span className="arrow-right">&#x2192;</span>
+                COGNITION 3.0<span className="arrow-right">&#x2192;</span>
               </button>
               {/* </Link> */}
               <AnchorLink href="#about" className="seemore">

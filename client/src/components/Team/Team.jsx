@@ -4,10 +4,10 @@ import TeamCard from "../TeamCard/TeamCard";
 
 const facultyCoordinators = [
   {
-    name: "Ajay Kumar",
-    image: "/team_img/Ajay.jpeg",
+    name: "Ram Kumar",
+    image: "/team_img/Dr Ram Kumar PP Latest.png",
     linkedinID:
-      "https://www.linkedin.com/in/ajay-kumar-71267820?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      "#",
   },
   {
     name: "Keshav Sinha",
@@ -160,7 +160,7 @@ const WorkingTeam = [
   {
     name: "Samriddh Sharma",
     position: "Management and Record Head",
-    image: "/team_img/samriddh .JPG",
+    image: "/team_img/Samridhh.jpeg",
     linkedinID:
       "https://www.linkedin.com/in/samriddh-sharma-754565258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
